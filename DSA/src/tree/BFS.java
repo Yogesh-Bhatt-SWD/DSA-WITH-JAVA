@@ -22,6 +22,7 @@ public class BFS {
         List<List<Integer>> ans = new ArrayList<>();
         Queue<Node> q = new LinkedList<>();
         q.offer(rootNode);
+        int count =0;
 
         while(!(q.isEmpty())) {
             List<Integer>level = new ArrayList<>();
@@ -39,8 +40,10 @@ public class BFS {
                     q.offer(current.right);
                 }
             }
+            count++;
             ans.add(level);
         }
+        System.out.println(count);
         return ans;
     }
     public static void main(String[] args) {
