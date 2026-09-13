@@ -2,7 +2,7 @@ package tree;
 
 import java.util.*;
 
-public class Solution {
+public class VerticalOrderTraversal {
     public static List<List<Integer>> verticalOrderTraversal(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
         Queue<Pair> q = new LinkedList<>();
