@@ -24,6 +24,7 @@ public class LevelOrderTraversal {
             List<Integer> li = new ArrayList<>();
 
             // Process all nodes of current level
+            //for loop because multiple nodes can be in a level
             for (int i = 0; i < size; i++) {
 
                 int node = q.poll();
